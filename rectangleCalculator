@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    float in_length;
+    float in_width;
+
+    float out_perimeter;
+    float out_area;
+
+    cout << "Rectangle Calculator" << endl;
+    cout << "Input length: ";
+    cin >> in_length;
+
+    cout << "Input width: ";
+    cin >> in_width;
+
+    out_perimeter = 2 * (in_length + in_width);
+    out_area = in_length * in_width;
+
+    cout << "\tPerimeter: ";
+    cout << out_perimeter << endl;
+
+    cout << "\tArea: ";
+    cout << out_area << endl;
+
+    return 0;
+}
