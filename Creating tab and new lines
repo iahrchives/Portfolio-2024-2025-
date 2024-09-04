@@ -1,0 +1,15 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+    cout << "Whatever we think," << endl;
+    cout << "\t     we speak," << endl;
+    cout << "Whatever we speak," << endl;
+    cout << "\t     we do," << endl;
+    cout << "Whatever we do," << endl;
+    cout << "\t     we become," << endl;
+
+    return 0;
+}
