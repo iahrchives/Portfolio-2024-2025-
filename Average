@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+    float in_first;
+    float in_second;
+
+    float out_sum;
+    float out_ave;
+
+    cout << "Input first number: ";
+    cin  >> in_first;
+
+    cout << "Input second number: ";
+    cin  >> in_second;
+
+    out_sum = in_first + in_second;
+
+    out_ave = out_sum/2;
+
+    cout << "Sum of the numbers: ";
+    cout << out_sum << endl;
+
+    cout << "Average: ";
+    cout << out_ave << endl;
+
+    return 0;
+}
