@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+	int main() {
+
+	cout << "I was born awesome \n";
+	cout << "I will continue to be awesome" << "\n";
+	cout << "by learning programming languages" << endl;
+	//I have tried different ways to add new lines
+
+	return 0;
+	}
