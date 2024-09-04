@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+    int input_age;
+    int input_level;
+    
+    cout << "Please share the following info"   << endl;
+    
+    cout << "\t Enter your age: ";
+    cin >> input_age;
+    
+    cout << "\t Enter your grade level: ";
+    cin >> input_level;
+    
+    cout << "\n You are " << input_age << " yrs old";
+    cout << "\n You are in Grade " << input_level;
+    
+
+    return 0;
+}
