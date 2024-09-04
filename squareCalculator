@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    
+    float in_side;
+    
+    float out_perimeter;
+    float out_area;
+    
+    cout << "Square Calculator " << endl;
+    cout << " Input length of side: ";
+    cin  >> in_side;
+    
+    out_perimeter = 4 * in_side;
+    
+    out_area = in_side*in_side;
+    
+    cout << "\t Perimeter: ";
+    cout << out_perimeter << endl;
+    
+    cout << "\t Area: ";
+    cout << out_area << endl;
+
+    return 0;
+}
