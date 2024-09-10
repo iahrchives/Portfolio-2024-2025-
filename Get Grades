@@ -1,0 +1,79 @@
+#include  <iostream>
+using namespace std;
+
+int main() {
+    double quiz1, quiz2, quiz3, classStanding, exam, quizTotal, avgGrade;
+    double equivalent;
+    
+    cout << "Enter Quiz #1: ";
+    cin >> quiz1;
+    cout << "Enter Quiz #2: ";
+    cin >> quiz2;
+    cout << "Enter Quiz #3: ";
+    cin >> quiz3;
+    cout << "Enter Class Standing Grade: ";
+    cin >> classStanding;
+    cout << "Enter Exam Grade: ";
+    cin >> exam;
+    
+    quizTotal = (quiz1 + quiz2 + quiz3) / 3;
+    avgGrade = (quizTotal * 0.30) + (classStanding * 0.20) + (exam * 0.50);
+    
+    cout << "The Average Grade is: " << avgGrade << endl;
+    
+     if (avgGrade >= 97.02) {
+            equivalent = 4.00;
+        } 
+    else if (avgGrade >= 93.02) {
+            equivalent = 3.75;
+        } 
+    else if (avgGrade >= 89.02) {
+            equivalent = 3.50;
+        } 
+    else if (avgGrade >= 85.02) {
+            equivalent = 3.25;
+        } 
+    else if (avgGrade >= 81.02) {
+            equivalent = 3.00;
+        } 
+    else if (avgGrade >= 77.02) {
+        equivalent = 2.75;
+        } 
+    else if (avgGrade >= 73.02) {
+            equivalent = 2.50;
+        } 
+    else if (avgGrade >= 69.02) {
+            equivalent = 2.25;
+        } 
+    else if (avgGrade >= 65.02) {
+            equivalent = 2.00;
+        } 
+    else if (avgGrade >= 61.02) {
+            equivalent = 1.75;
+        } 
+    else if (avgGrade >= 57.02) {
+            equivalent = 1.50;
+        } 
+    else if (avgGrade >= 53.02) {
+            equivalent = 1.25;
+        } 
+    else if (avgGrade >= 49.02) {
+            equivalent = 1.00;
+        } 
+    else {
+            equivalent = 0.00;
+        }
+
+    
+    cout << "Equivalent: " << equivalent << endl;
+    
+    if (equivalent > 0.00) {
+        cout << " Status: PASSED" << endl;
+    }
+    
+    else {
+        cout << "Status: FAILED" << endl;
+    }
+    
+    return 0;
+}
