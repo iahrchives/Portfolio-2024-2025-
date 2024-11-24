@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(#D3FFAD, #F1EDED);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+  }
+  
+  header h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #528525;
+  }
+
+  .header-icon {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 20px; /* Adds spacing between the icon and text */
+  }
+  
+  
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 60px;
+  }
+  
+  .profile {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .profile-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    border: 3px solid #000;
+    margin-bottom: 15px;
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .social-icons a:hover {
+    color: #555;
+  }
+  
+  .intro {
+    flex: 2;
+    max-width: 600px;
+  }
+  
+  .intro h2 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 40px;
+    color: #1b4332;
+    margin-bottom: 30px;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+/* Styling for buttons on the right side */
+.buttons button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #528525; /* Green background */
+  padding: 10px 20px;
+  border-radius: 25px; /* Fully rounded corners */
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.buttons button:hover {
+  background-color: #588157; /* Lighter green */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.buttons button:active {
+  transform: translateY(0); /* Button returns when clicked */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+  
+  .content {
+    display: flex;
+  gap: 60px; 
+  align-items: flex-start;
+  margin-top: -50px;
+  }
+  
+  .profile {
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .main {
+    flex: 1;
+    max-width: 1000px;
+    padding: 0;
+    text-align: left;
+    margin-top: 150px; /* Increased margin to push content lower */
+  }
+  
+  .main h2 {
+    font-size: 1.5rem; /* Slightly reduced font size for a cleaner look */
+    margin-bottom: 10px;
+    color: #1b4332;
+  }
+  
+  .main p {
+    font-size: 0.9rem; /* Reduced text size slightly */
+    line-height: 1.5;
+    color: #333;
+  }
+
+  ul.skills-list {
+    font-size: 16px;
+    border: 2px solid #1b4332;
+    padding: 10px;
+    margin-bottom: 10px;
+    list-style-position: inside;
+  }
+  
+  
+  
+  header nav {
+    display: flex;
+    gap: 10px; /* Space between the navigation links */
+  }
+  
+/* Styling for all navigation links to match the back button */
+header nav a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1rem; /* Slightly smaller than the back button */
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #528525;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  white-space: nowrap; /* Prevents text wrapping */
+}
+
+header nav a:hover {
+  background-color: #2d6a4f;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+header nav a:active {
+  transform: translateY(0); /* Button returns when clicked */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Specific style for the active link */
+header nav a.active {
+  background-color: #2d6a4f; /* Slightly different to show active state */
+  text-decoration: underline; /* Optional: underline for emphasis */
+  color: #ffffff;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between gallery items */
+  margin-top: 10px;
+}
+
+  .gallery-item {
+    flex: 1 1 calc(33.333% - 20px); /* 3 items per row with spacing */
+    box-shadow: 0 4px 6px rgba(9, 87, 233, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .middle-item img {
+    width: 120%; /* Increase size for the middle image */
+    max-width: 400px; /* Optional: Add a max width to control its size */
+    height: auto; /* Maintain aspect ratio */
+}
+  
+  .gallery-item img {
+    width: 95%; /* Reduce the width percentage */
+    max-width: 300px; /* Add a maximum width for consistency */
+    height: auto;
+    border-bottom: 2px solid #528525; /* Accent for the image */
+    margin: 0 auto; /* Center the images if needed */
+}
+
+  
+  .gallery-item p {
+    font-size: 0.9rem;
+    color: #054014;
+    padding: 10px;
+  }
+  
+/* Back button styling */
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #528525;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.back-btn i {
+  font-size: 1.4rem; /* Size of the arrow icon */
+}
+
+.back-btn:hover {
+  background-color: #76c285;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.back-btn:active {
+  transform: translateY(0); /* Button returns when clicked */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.main ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.main ul li {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #2d6a4f;
+}
+
+.main h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #1b4332;
+}
+
+.main p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #2d6a4f;
+}
+
